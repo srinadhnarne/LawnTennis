@@ -1,0 +1,199 @@
+.lawnTennis-Fixture_item{
+    display: flex;
+    flex-direction: row;
+    background-color: beige;
+    margin: 0.5rem 2rem;
+    padding: 3rem;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+
+.lawnTennis-Fixture_item_MatchDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.lawnTennis-Fixture_item_MatchDate{
+    margin-top: 0.5rem;
+    font-weight: normal;
+}
+
+.lawnTennis-Fixture_item_ScorecardButton{
+    padding: 0.5rem;
+    font-size: larger;
+    background-color:white;
+    border: 0.25px black solid;
+    border-radius: 0.5rem;
+}
+
+.lawnTennis-Fixture_item_ScorecardButton:hover{
+    background-color:dodgerblue;
+    cursor: pointer;
+}
+
+.lawnTennis-Fixtures_addnew{
+    margin: 1rem 2rem 0.75rem 2rem;
+    background-color: beige;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    & button{
+        font-weight: bold;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+    }
+    & button:hover{
+        background-color: dodgerblue;
+        cursor: pointer;
+    }
+}
+
+.lawnTennis-Fixture_addNewFixture{
+    background-color: beige;
+    margin: 1rem 2rem 0.75rem 2rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+}
+
+.lawnTennis-Fixture_addNewFixtureHeading{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    font-size: larger;
+    font-weight: bolder;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.lawnTennis-Fixture_addNewClose{
+    display: flex;
+    justify-content: right;
+}
+
+.lawnTennis-Fixture_addNewFixtureClosebutton{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    background-color: lightgray;
+    padding: 0.25rem;
+    border-radius: 25%;
+    font-family:Arial, Helvetica, sans-serif;
+    color: grey;
+}
+
+.lawnTennis-Fixture_addNewFixtureClosebutton:hover{
+    color: black;
+    /* font-weight: bold; */
+    border: 1px black solid;
+    background-color: gray;
+    cursor: default;
+}
+
+.lawnTennis-Fixture_addNewFixtureSubmit{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+    & button{
+        border-radius: 0.25rem;
+        padding: 0.25rem;
+    }
+    & button:hover{
+        background-color:dodgerblue;
+        cursor: default;
+    }
+}
+
+.lawnTennis-Fixture_addNewFixtureInputs{
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.25rem;
+    gap: 0.75rem;
+    /* width: 15rem; */
+    justify-content: center;
+    align-items: center;
+    & input{
+        padding: 0.25rem;
+        border-radius: 0.25rem;
+    }
+}
+
+.lawnTennis-Fixtures_heading{
+    margin: 0.5rem 2rem;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    font-size: larger;
+    font-weight: bolder;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.lawnTennis-Fixture_addNewFixtureInputs_Date{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.25rem;
+}
+
+.Loading_Circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px black solid;
+    border-left: 3px black solid;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: rotate linear infinite 2s;
+}
+
+.lawnTennis-Fixture_loading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+@media screen and (max-width:450px) {
+    .lawnTennis-Fixture_item{
+        min-width:220px;
+        padding: 2rem;
+        font-size: small;
+    }
+    .lawnTennis-Fixture_item_ScorecardButton{
+        padding: 0.25rem;
+        font-size: medium;
+        border-radius: 0.35rem;
+    }
+
+    /* .lawnTennis-Fixture_item_MatchDetails{
+        display: flex;
+        flex-direction: column;
+    } */
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+

@@ -1,0 +1,252 @@
+.lawnTennis-MatchScoring{
+    background-color: beige;
+    margin: 1rem 2rem 0.75rem 2rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+
+.lawnTennis-MatchScoring_heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    font-weight: bolder;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.lawnTennis-MatchScoring_Details{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 0 0;
+}
+
+.lawnTennis-MatchScoring_AddDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 0 0;
+}
+
+.lawnTennis-MatchScoring_vs{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.lawnTennis-MatchScoring_teamDetails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.lawnTennis-MatchScoring_AddButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & button{
+        margin: 0.5rem 0 0 0;
+        border-radius: 0.25rem;
+        padding: 0.25rem;
+    }
+    & button:hover{
+        background-color:dodgerblue;
+        cursor: default;
+    }
+}
+
+.lawnTennis-MatchScoring_teamPlayerDetails{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5rem;
+    margin: 0.25rem;
+    & ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        & li{
+            text-decoration: none;
+            padding: 0.25rem;
+        }
+    }
+}
+
+.lawnTennis-MatchScoring_AddTeamPlayerDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.25rem;
+    & input{
+        border-radius: 0.5rem;
+    }
+}
+
+.lawnTennis-MatchScoring_addnewSet{
+    margin: 1rem 0.5rem 0.75rem 0.5rem;
+    background-color: beige;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    & button{
+        font-weight: bold;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+    }
+    & button:hover{
+        background-color: dodgerblue;
+        cursor: pointer;
+    }
+}
+
+.lawnTennis-MatchScoring_Set{
+    background-color: beige;
+    margin: 1rem 0.5rem 0.75rem 0.5rem;
+    padding: 0.25rem 0.25rem 0.25rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    border-radius: 0.5rem;
+    /* font-weight: bold; */
+}
+
+.lawnTennis-MatchScoring_SetHeader{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: bolder;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.lawnTennis-MatchScoring_EditIcon{
+    display: flex;
+    justify-content: right;
+    margin: 0 0 0 15rem;
+}
+
+.lawnTennis-MatchScoring_SetExpandIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.removeDiv{
+    display: none;
+}
+
+.lawnTennis-MatchScoring_addnewGame{
+    margin: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.lawnTennis-MatchScoring_addnewGameMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 1rem 0rem 0 0rem;
+    /* padding: 0.5rem; */
+}
+
+.lawnTennis-MatchScoring_addnewGameGameCount{
+    padding: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lawnTennis-MatchScoring_addnewGameInner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.lawnTennis-MatchScoring_addnewGameScore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        gap: 0.1rem;
+        & li{
+            padding: 0.25rem;
+            background-color: white;
+            border: 0.25px black solid;
+        }
+        & li:hover{
+            cursor: default;
+        }
+    }
+}
+
+.lawnTennis-MatchScoring_addnewGameCount,.lawnTennis-MatchScoring_addnewGameTeam1,.lawnTennis-MatchScoring_addnewGameTeam2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    min-height: 45px;
+    /* margin: 0 1rem 0 3rem; */
+}
+
+.lawnTennis-MatchScoring_addnewGameHeading{
+    font-size: small;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.addBackground{
+    font-size: large;
+    font-weight: bold;
+    color: dodgerblue;
+}
+
+.lawnTennis-MatchScoring_SetResult{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 0 0;
+    font-size: medium;
+    font-weight: bold;
+}
+
+@media (min-width: 550px) {
+    .lawnTennis-MatchScoring_AddDetails{
+        flex-direction: row;
+        gap: 5rem;
+    }
+}
